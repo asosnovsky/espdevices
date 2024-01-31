@@ -1,0 +1,8 @@
+packages:
+  EverythingSmartTechnology.Everything_Presence_Lite: github://everythingsmarthome/everything-presence-lite/everything-presence-lite-ha.yaml@main
+  common: !include
+    file: ./common/settings.yaml
+    vars:
+      device: epl1
+      room: livingroom
+      identity: 14

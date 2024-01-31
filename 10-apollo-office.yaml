@@ -1,0 +1,9 @@
+packages:
+  ApolloAutomation.MSR-1: github://ApolloAutomation/MSR-1/Integrations/ESPHome/MSR-1.yaml
+  common: !include
+    file: ./common/settings.yaml
+    vars:
+      device: apollo
+      room: office
+      identity: 10
+  extra: !include ./common/apollo-extra.yaml
