@@ -1,0 +1,13 @@
+services:
+  esphome:
+    container_name: esphome
+    image: ghcr.io/esphome/esphome
+    volumes:
+      - ./configs:/config
+      - /etc/localtime:/etc/localtime:ro
+    restart: always
+    privileged: true
+    network_mode: host
+    devices:
+      - /dev/ttyACM0
+      - /dev/ttyUSB0

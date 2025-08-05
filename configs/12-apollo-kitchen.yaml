@@ -1,9 +1,11 @@
 packages:
-  ApolloAutomation.MSR-1: github://ApolloAutomation/MSR-1/Integrations/ESPHome/MSR-1.yaml
+  ApolloAutomation.MSR-1: github://ApolloAutomation/MSR-1/Integrations/ESPHome/MSR-1_Factory.yaml
   common: !include
     file: ./common/settings.yaml
     vars:
       device: apollo
-      room: eddie
+      room: kitchen
       identity: 12
   extra: !include ./common/apollo-extra.yaml
+substitutions:
+  name: apollo-kitchen

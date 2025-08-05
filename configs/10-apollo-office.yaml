@@ -1,5 +1,5 @@
 packages:
-  ApolloAutomation.MSR-1: github://ApolloAutomation/MSR-1/Integrations/ESPHome/MSR-1.yaml
+  ApolloAutomation.MSR-1: github://ApolloAutomation/MSR-1/Integrations/ESPHome/MSR-1_Factory.yaml
   common: !include
     file: ./common/settings.yaml
     vars:
@@ -7,3 +7,5 @@ packages:
       room: office
       identity: 10
   extra: !include ./common/apollo-extra.yaml
+substitutions:
+  name: apollo-office

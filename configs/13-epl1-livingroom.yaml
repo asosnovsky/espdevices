@@ -4,6 +4,7 @@ packages:
     file: ./common/settings.yaml
     vars:
       device: epl1
-      room: livingroom
-      identity: 14
+      room: living-room
+      identity: 13
   extra: !include ./common/epl-extra.yaml
+    
